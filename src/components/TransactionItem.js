@@ -5,11 +5,12 @@ function TransactionItem({ transaction, onDelete }) {
   const isIncome = type === 'Income'
 
   return (
-    <li className={`item ${isIncome ? 'item-income' : 'item-expense'}`}>
+    <li className="item">
+      <span className={`dot ${isIncome ? 'dot-income' : 'dot-expense'}`} />
       <div>
         <strong>{description}</strong>
         <small>
-          {type} · {category}
+          {type} <span className="badge">{category}</span>
         </small>
       </div>
       <span className={isIncome ? 'income' : 'expense'}>

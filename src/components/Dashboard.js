@@ -6,7 +6,7 @@ function Dashboard({ balance, income, expenses, recentTransactions }) {
       <h2>Dashboard</h2>
 
       <div className="stats">
-        <div className="stat">
+        <div className="stat stat-balance">
           <span>Balance</span>
           <strong className={balance < 0 ? 'expense' : ''}>{formatMoney(balance)}</strong>
         </div>

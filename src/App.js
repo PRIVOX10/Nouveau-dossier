@@ -49,7 +49,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Finance Tracker</h1>
+      <header className="header">
+        <h1>Finance Tracker</h1>
+        <p>Track your income and expenses in one place</p>
+      </header>
 
       <Dashboard
         balance={balance}
